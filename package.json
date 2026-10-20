@@ -1,0 +1,21 @@
+{
+  "name": "goit-advancedjs-hw-05",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Тема 9. Вступ до TypeScript",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "watch": "tsc -p tsconfig.json --watch",
+    "prestart": "npm run build",
+    "start": "web-dev-server --node-resolve --watch --hostname 127.0.0.1 --port 8000"
+  },
+  "devDependencies": {
+    "@web/dev-server": "1.0.0",
+    "typescript": "5.9.3"
+  }
+}
